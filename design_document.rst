@@ -68,13 +68,13 @@ It was also thought that speech input would make a lot of sense as it is linked 
 
 Data Structures Used:
 --------------------
-Tf-idf: Dictionary of lists of pairs.  {'string':[[i1,i2],[i3,i4]],'string2':[[i5,i6],[i7,i8]]}
-word_index: Dictionary mapping integer to string {i1:'word1','i2':'word2'}
-index_word: Dictionary mapping string to integer
-heap: min heap for top 10 closest lyrics
-idf: Dictionary mapping integer to integer
-song_map: Dictionary mapping string to pair of strings (trackid to track_name and artist_name)
-query_input: List of pairs
+- Tf-idf: Dictionary of lists of pairs.  {'string':[[i1,i2],[i3,i4]],'string2':[[i5,i6],[i7,i8]]}
+- word_index: Dictionary mapping integer to string {i1:'word1','i2':'word2'}
+- index_word: Dictionary mapping string to integer
+- heap: min heap for top 10 closest lyrics
+- idf: Dictionary mapping integer to integer
+- song_map: Dictionary mapping string to pair of strings (trackid to track_name and artist_name)
+- query_input: List of pairs
 
 
 The pickle library was used to make these Data structures persistent. All of the above mentioned strutures were saved as pickle files.
